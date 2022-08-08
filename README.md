@@ -9,7 +9,7 @@ A new Flutter project.
 </p>
 
 I use https://imdb-api.com/api this api for project
-
+For use the app you need to get your api key and set it into api_key.dart file
 
 
 ## Getting Started
