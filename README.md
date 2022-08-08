@@ -2,6 +2,17 @@
 
 A new Flutter project.
 
+
+<p align="center">
+  <img src="images_github/movies.png" width="350" title="hover text" >
+  <img src="images_github/series.png" width="350" alt="accessibility text">
+</p>
+
+I use https://imdb-api.com/api this api for project
+
+For use the app you need to get your api key and set it into api_key.dart file
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
