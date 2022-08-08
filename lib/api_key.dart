@@ -1,5 +1,3 @@
-// String apiKey = "k_8jqgzztg";
+//Enter your api_key here
 
-// String apiKey = "k_srfimy1z";
-
-String apiKey = "k_1ix8ajdl";
+String apiKey = "";
