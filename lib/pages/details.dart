@@ -1,4 +1,5 @@
 import 'package:find_me_a_movie/components/components.dart';
+import 'package:find_me_a_movie/pages/video_player.dart';
 import 'package:find_me_a_movie/services/htpp.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -80,8 +81,13 @@ class DetailsPage extends StatelessWidget {
                                           10,
                                       child: TextButton(
                                         onPressed: () {
-                                          _launchUrl(snapshot1.data!.videoUrl
-                                              .toString());
+                                          Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      VideoApp(
+                                                          url: snapshot1.data!
+                                                              .videoUrl)));
                                         },
                                         child: Column(
                                           children: const [
