@@ -11,14 +11,31 @@ class Movies extends StatefulWidget {
   State<Movies> createState() => _MoviesState();
 }
 
+String value = "!";
+
 class _MoviesState extends State<Movies> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: CustomColors().background,
       appBar: AppBar(
+        flexibleSpace: SafeArea(
+          child: Row(
+            children: [
+              const Text("Top 250 Movies"),
+              TextField(
+                onSubmitted: (data) {
+                  value = data;
+                  setState(() {});
+                },
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                ),
+              ),
+            ],
+          ),
+        ),
         backgroundColor: CustomColors().background,
-        title: const Text("Top 250 Movies"),
       ),
       body: FutureBuilder(
         future: getTop250M(),
