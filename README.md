@@ -5,6 +5,7 @@ A new Flutter project.
 
 <p align="center">
   <img src="images_github/movies.png" width="350" title="hover text" >
+  <br/>
   <img src="images_github/series.png" width="350" alt="accessibility text">
 </p>
 
